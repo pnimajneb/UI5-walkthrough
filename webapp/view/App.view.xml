@@ -3,30 +3,19 @@
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true">
-	<!-- this is a control just like the Button and the Input below -->
-	<App>
-	<!-- this is a property belonging to <App> -->
-		<pages>
-		 <!-- this is a control just like the Button and the Input below -->
-			<Page title="{i18n>homePageTitle}">
-				<content>
-				<!-- this is a control just like the Button and the Input below -->
-					<Panel headerText="{i18n>helloPanelTitle}">
-						<content>
-							<Button
-								text="{i18n>showHelloButtonText}"
-								press=".onShowHello"
-							/>
-							<Input
-								value="{/recipient/name}"
-								description="Hello {/recipient/name}"
-								valueLiveUpdate="true"
-								width="60%"
-							/>
-						</content>
-					</Panel>
-				</content>
-			</Page>
-		</pages>
-	</App>
+	<Shell>
+		<!-- this is a control just like the Button and the Input below -->
+		<App class="myAppDemoWT">
+			<!-- this is a property belonging to <App> -->
+			<pages>
+			 	<!-- this is a control just like the Button and the Input below -->
+				<Page title="{i18n>homePageTitle}">
+					<content>
+						<mvc:XMLView viewName="ui5.walkthrough.view.HelloPanel"/>
+						<mvc:XMLView viewName="ui5.walkthrough.view.InvoiceList"/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
 </mvc:View>
