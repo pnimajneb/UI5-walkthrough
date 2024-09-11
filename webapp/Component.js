@@ -6,7 +6,6 @@ sap.ui.define([
 
 	return UIComponent.extend("ui5.walkthrough.Component", {
 		metadata: {
-			//test
 			// implicitly sets both the component's rootView and its router configuration to "async": true
 			interfaces: ["sap.ui.core.IAsyncContentCreation"],
 			manifest: "json"
