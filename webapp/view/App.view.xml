@@ -3,19 +3,9 @@
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true">
-	<Shell>
-		<!-- this is a control just like the Button and the Input below -->
-		<App class="myAppDemoWT">
-			<!-- this is a property belonging to <App> -->
-			<pages>
-			 	<!-- this is a control just like the Button and the Input below -->
-				<Page title="{i18n>homePageTitle}">
-					<content>
-						<mvc:XMLView viewName="ui5.walkthrough.view.HelloPanel"/>
-						<mvc:XMLView viewName="ui5.walkthrough.view.InvoiceList"/>
-					</content>
-				</Page>
-			</pages>
-		</App>
-	</Shell>
+	 <Shell>
+        <App
+            class="myAppDemoWT"
+            id="app"/>
+    </Shell>
 </mvc:View>
